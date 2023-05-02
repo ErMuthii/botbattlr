@@ -10,37 +10,36 @@ const BotCard = ({ bot, addBot }) => {
   const botTypeIcon = botTypeIcons[bot.bot_class] || "";
 
   return (
-    <div className="ui column">
-      <div className="ui card" onClick={() => addBot(bot)}>
-        <div className="image">
-          <img alt="oh no!" src={bot.avatar_url} />
+     <div >
+      <div onClick={() => addBot(bot)}>
+       {/* Image  */}
+        <div >
+          <img src={bot.avatar_url} />
         </div>
-        <div className="content">
-          <div className="header">
+        {/* {Name} */}
+
+        <div>
+          <div>
             {bot.name} <i className={`icon ${botTypeIcon}`} />
           </div>
-
-          <div className="meta text-wrap">
+        {/* {Catchphrase} */}
+          <div >
             <small>{bot.catchphrase}</small>
           </div>
         </div>
+
+
         <div className="extra content">
           <span>
-            <i className="icon heartbeat" />
-            {bot.health}
+             {bot.health}
+             {bot.damage}
+             {bot.armor}
           </span>
 
-          <span>
-            <i className="icon lightning" />
-            {bot.damage}
-          </span>
-          <span>
-            <i className="icon shield" />
-            {bot.armor}
-          </span>
-        </div>
-      </div>
-    </div>
+
+            </div>
+         </div>
+     </div>
   );
 };
 
