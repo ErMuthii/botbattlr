@@ -1,6 +1,7 @@
 import React from "react";
 import BotCard from "./BotCard";
 
+// Destructuring the props from the BotsPage component
 const BotSpecs = ({ bot, clearSpec, addBot }) => {
   
   const handleAddBot = () => {
@@ -49,7 +50,7 @@ const BotSpecs = ({ bot, clearSpec, addBot }) => {
             <button  onClick={clearSpec}>
               Go Back
             </button>
-            
+
             <button  onClick={handleAddBot}>
               {bot.owned ? "Remove From Army" : "Enlist"}
             </button>
