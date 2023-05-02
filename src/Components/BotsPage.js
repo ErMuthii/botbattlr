@@ -7,6 +7,7 @@ import BotSpecs from "./BotSpecs";
 function BotsPage() {
   const [allBots, setAllBots] = useState([]);
   const [selectBot, setSelectBot] = useState(undefined);
+//   fetching my data which I stored in a dblClick.json file  
 
   useEffect(() => {
     fetch('http://localhost:3000/bots')
