@@ -1,13 +1,6 @@
 import React from "react";
 
 const BotCard = ({ bot, addBot }) => {
-  const botTypeIcons = {
-    Assault: "military",
-    Defender: "shield",
-    Support: "ambulance"
-  };
-
-  const botTypeIcon = botTypeIcons[bot.bot_class] || "";
 
   return (
      <div >
@@ -20,7 +13,7 @@ const BotCard = ({ bot, addBot }) => {
 
         <div>
           <div>
-            {bot.name} <i className={`icon ${botTypeIcon}`} />
+            {bot.name}  
           </div>
         {/* {Catchphrase} */}
           <div >
