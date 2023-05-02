@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import BotList from "./BotList";
-import YourBotArmy from './YourBotArmy'
-import BotSpecs from "./BotSpecs";
+import YourBotArmy from './MyArmy'
+import BotSpecs from "./BotDetails";
 
 function BotsPage() {
   const [allBots, setAllBots] = useState([]);

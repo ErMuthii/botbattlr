@@ -1,7 +1,7 @@
 import React from "react";
 import BotCard from "./BotCard";
 
-function YourBotArmy({ bots, addBot }) {
+function MyArmy({ bots, addBot }) {
   const renderBots = () => {
     return bots.map((bot) => {
       return <BotCard key={bot.id} bot={bot} addBot={addBot} />;
@@ -10,13 +10,13 @@ function YourBotArmy({ bots, addBot }) {
 
   return (
     
-     <div className="ui segment inverted olive bot-army">   
+     <div >   
          <h2>Your Bot Army  </h2>
           {renderBots()}
-    </div>
+     </div>
    
      
   );
 }
 
-export default YourBotArmy;
+export default MyArmy;

@@ -2,7 +2,7 @@ import React from "react";
 import BotCard from "./BotCard";
 
 // Destructuring the props from the BotsPage component
-const BotSpecs = ({ bot, clearSpec, addBot }) => {
+const BotDetails = ({ bot, clearSpec, addBot }) => {
   
   const handleAddBot = () => {
     addBot(bot);
@@ -62,4 +62,4 @@ const BotSpecs = ({ bot, clearSpec, addBot }) => {
   );
 };
 
-export default BotSpecs;
+export default BotDetails;
